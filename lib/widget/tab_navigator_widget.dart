@@ -1,6 +1,7 @@
-import 'package:clone_ifood/components/categories_menu/category_menu.dart';
 import 'package:clone_ifood/core/app_colors.dart';
 import 'package:clone_ifood/core/app_text_styles.dart';
+import 'package:clone_ifood/screens/markets.dart';
+import 'package:clone_ifood/screens/restaurants.dart';
 import 'package:flutter/material.dart';
 
 class TabNavigator extends StatefulWidget {
@@ -46,8 +47,8 @@ class _TabNavigatorState extends State<TabNavigator> {
           ),
           body: TabBarView(
             children: <Widget>[
-              CategoryMenu(),
-              Container(),
+              RestaurantScreen(),
+              MarketScreen(),
             ],
           ),
         ),
