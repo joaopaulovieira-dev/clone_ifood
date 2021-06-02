@@ -1,4 +1,4 @@
-import 'package:clone_ifood/components/categories_menu/category_menu.dart';
+import 'package:clone_ifood/widget/tab_navigator_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,13 +12,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: 100,
-        decoration: BoxDecoration(
-          color: Colors.white,
-        ),
-        child: CategoryMenu(),
-      ),
+      body: Container(child: TabNavigator()),
     );
   }
 }

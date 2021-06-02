@@ -1,3 +1,4 @@
+import 'package:clone_ifood/components/categories_menu/category_menu.dart';
 import 'package:clone_ifood/core/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -33,13 +34,19 @@ class _TabNavigatorState extends State<TabNavigator> {
                   indicatorColor: AppColors.red,
                   labelColor: AppColors.red,
                   unselectedLabelColor: AppColors.greyTabUnselected,
-                  tabs: [
+                  tabs: <Widget>[
                     Text("Restaurantes"),
                     Text("Mercados"),
                   ],
                 ),
               ),
             ),
+          ),
+          body: TabBarView(
+            children: <Widget>[
+              CategoryMenu(),
+              Container(),
+            ],
           ),
         ),
       ),
