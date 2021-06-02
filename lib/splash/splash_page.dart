@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 5)).then(
+    Future.delayed(Duration(seconds: 1)).then(
       (_) => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -17,7 +17,7 @@ class SplashPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          color: AppColors.primaryColorRed,
+          color: AppColors.red,
         ),
         child: Center(
           child: Image.asset(AppImages.logo),
