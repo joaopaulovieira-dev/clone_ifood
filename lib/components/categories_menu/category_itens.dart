@@ -3,13 +3,13 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget itemList(Color cor, String nome) => Stack(children: <Widget>[
+Widget itemList(String imagem, String nome) => Stack(children: <Widget>[
       Container(
         margin: const EdgeInsets.all(4),
         width: 100,
         height: 100,
         decoration:
-            BoxDecoration(color: cor, borderRadius: BorderRadius.circular(16)),
+            BoxDecoration(image: DecorationImage(image: AssetImage(imagem),fit: BoxFit.cover), borderRadius: BorderRadius.circular(16)),
       ),
       Container(
         alignment: Alignment.bottomCenter,

@@ -1,4 +1,5 @@
 import 'package:clone_ifood/components/categories_menu/category_itens.dart';
+import 'package:clone_ifood/core/app_images.dart';
 import 'package:flutter/material.dart';
 
 class CategoryMenu extends StatelessWidget {
@@ -12,11 +13,11 @@ class CategoryMenu extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          itemList(Colors.red, 'Categoria 1'),
-          itemList(Colors.blue, 'Categoria 2'),
-          itemList(Colors.green, 'Categoria 3'),
-          itemList(Colors.yellow, 'Categoria 4'),
-          itemList(Colors.amber, 'Categoria 5'),
+          itemList(AppImages.categBrasileira, 'Brasileira'),
+          itemList(AppImages.categCarnes, 'Carnes'),
+          itemList(AppImages.categLanches, 'Lanches'),
+          itemList(AppImages.categSaudavel, 'Saudável'),
+          itemList(AppImages.categPizzas, 'Pizza'),
         ],
       ),
     );

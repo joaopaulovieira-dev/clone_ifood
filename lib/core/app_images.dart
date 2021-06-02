@@ -10,6 +10,11 @@ class AppImages {
   static String get carousel1 => "assets/images/imperdiveis.webp";
   static String get carousel2 => "assets/images/restaurante.webp";
   static String get carousel3 => "assets/images/saudaveis.webp";
+  static String get categBrasileira => "assets/images/Brasileira.webp";
+  static String get categCarnes => "assets/images/Carnes.webp";
+  static String get categLanches => "assets/images/Lanches.webp";
+  static String get categPizzas => "assets/images/Pizza.webp";
+  static String get categSaudavel => "assets/images/Saudavel.webp";
 
 
 }
