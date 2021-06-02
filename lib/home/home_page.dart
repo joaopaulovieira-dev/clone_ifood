@@ -1,4 +1,4 @@
-import 'package:clone_ifood/widget/tab_navigator_widget.dart';
+import 'package:clone_ifood/home/widget/tab_navigator_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
