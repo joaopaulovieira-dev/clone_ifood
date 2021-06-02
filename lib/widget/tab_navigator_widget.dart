@@ -1,5 +1,5 @@
-
 import 'package:clone_ifood/core/app_colors.dart';
+import 'package:clone_ifood/core/app_text_styles.dart';
 import 'package:clone_ifood/screens/markets.dart';
 import 'package:clone_ifood/screens/restaurants.dart';
 import 'package:flutter/material.dart';
@@ -30,9 +30,10 @@ class _TabNavigatorState extends State<TabNavigator> {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: TabBar(
+                  labelStyle: AppTextStyles.tabNavigator,
                   isScrollable: true,
                   indicatorSize: TabBarIndicatorSize.label,
-                  labelPadding: EdgeInsets.all(15),
+                  labelPadding: EdgeInsets.all(12),
                   indicatorColor: AppColors.red,
                   labelColor: AppColors.red,
                   unselectedLabelColor: AppColors.greyTabUnselected,
