@@ -24,6 +24,32 @@ class _HomePageState extends State<HomePage> {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      'Avenida N. Senhora do Amparo, 971',
+                      style: AppTextStyles.titleAppBar,
+                    ),
+                    Icon(
+                      Icons.keyboard_arrow_down,
+                      size: 16,
+                      color: AppColors.red,
+                    ),
+                  ],
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.qr_code_scanner,
+                    color: AppColors.red,
+                    size: 23,
+                  ),
+                )
+              ],
+            ),
             elevation: 0,
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(50.0), //Altura do Menu
