@@ -6,7 +6,7 @@ class ButtonFilters extends StatelessWidget {
   ButtonFilters({Key? key}) : super(key: key);
 
   final ButtonStyle outlineButtonStyle = OutlinedButton.styleFrom(
-    padding: EdgeInsets.symmetric(horizontal: 12.0),
+    padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 8),
     textStyle: AppTextStyles.buttonFilters,
     backgroundColor: Colors.white,
     shape: const RoundedRectangleBorder(
