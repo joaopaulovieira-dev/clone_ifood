@@ -8,6 +8,7 @@ class ButtonFilters extends StatelessWidget {
   final ButtonStyle outlineButtonStyle = OutlinedButton.styleFrom(
     padding: EdgeInsets.symmetric(horizontal: 12.0),
     textStyle: AppTextStyles.buttonFilters,
+    backgroundColor: Colors.white,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(50)),
     ),
@@ -27,12 +28,15 @@ class ButtonFilters extends StatelessWidget {
             onPressed: null,
             child: Row(
               children: <Widget>[
-                Icon(Icons.keyboard_arrow_down),
                 Text(
                   "Ordenar",
                   style: TextStyle(
                     color: AppColors.greyButtonFilters,
                   ),
+                ),
+                Icon(
+                  Icons.keyboard_arrow_down,
+                  size: 17,
                 ),
               ],
             ),
@@ -45,7 +49,13 @@ class ButtonFilters extends StatelessWidget {
             onPressed: null,
             child: Row(
               children: <Widget>[
-                Icon(Icons.directions_walk),
+                Icon(
+                  Icons.directions_walk,
+                  size: 17,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
                 Text(
                   "Pra retirar",
                   style: TextStyle(
@@ -76,12 +86,18 @@ class ButtonFilters extends StatelessWidget {
             onPressed: null,
             child: Row(
               children: <Widget>[
-                Icon(Icons.keyboard_arrow_down),
                 Text(
                   "Vale-refeição",
                   style: TextStyle(
                     color: AppColors.greyButtonFilters,
                   ),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Icon(
+                  Icons.keyboard_arrow_down,
+                  size: 17,
                 ),
               ],
             ),
@@ -94,12 +110,25 @@ class ButtonFilters extends StatelessWidget {
             onPressed: null,
             child: Row(
               children: <Widget>[
-                Icon(Icons.keyboard_arrow_down),
                 Text(
-                  "Distância |",
+                  "Distância",
                   style: TextStyle(
                     color: AppColors.greyButtonFilters,
                   ),
+                ),
+                Text(
+                  "  |",
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                  ),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Icon(
+                  Icons.keyboard_arrow_down,
+                  size: 17,
+                  color: Colors.grey[900],
                 ),
               ],
             ),
@@ -138,12 +167,18 @@ class ButtonFilters extends StatelessWidget {
             onPressed: null,
             child: Row(
               children: <Widget>[
-                Icon(Icons.keyboard_arrow_down),
                 Text(
                   "Filtros",
                   style: TextStyle(
                     color: AppColors.greyButtonFilters,
                   ),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Icon(
+                  Icons.sort_outlined,
+                  size: 17,
                 ),
               ],
             ),

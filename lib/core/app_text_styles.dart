@@ -8,6 +8,6 @@ class AppTextStyles {
   );
   static final TextStyle buttonFilters = GoogleFonts.nunito(
     fontSize: 14,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w700,
   );
 }
