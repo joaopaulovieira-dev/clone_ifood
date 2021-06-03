@@ -13,4 +13,7 @@ class AppTextStyles {
     fontSize: 15,
     fontWeight: FontWeight.w700,
   );
+  static final TextStyle titleSNavigatoritem = GoogleFonts.overpass(
+    fontSize: 10,
+  );
 }
