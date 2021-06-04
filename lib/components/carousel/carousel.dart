@@ -36,7 +36,8 @@ class _CarouselState extends State<Carousel> {
       body: ListView(
         children: <Widget>[
           Container(
-            height: 200,
+            height: 180,
+            padding: EdgeInsets.symmetric(horizontal: 12),
             child: CarouselSlider.builder(
               keepPage: false,
               unlimitedMode: false,
@@ -57,9 +58,9 @@ class _CarouselState extends State<Carousel> {
               slideTransform: DefaultTransform(),
               slideIndicator: CircularSlideIndicator(
                   itemSpacing: 20,
-                  indicatorBorderWidth: 1,
+                  indicatorBorderWidth: 0.1,
                   alignment: Alignment.bottomCenter,
-                  indicatorBorderColor: Colors.black),
+                  indicatorBorderColor: Colors.grey[600]),
               itemCount: letters.length,
               initialPage: 0,
               enableAutoSlider: false,
