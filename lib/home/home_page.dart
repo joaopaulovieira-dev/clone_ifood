@@ -41,6 +41,8 @@ class _HomePageState extends State<HomePage> {
         length: 2,
         child: Scaffold(
           body: Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
             child: _widgetOptions.elementAt(_selectedIndex),
           ),
           bottomNavigationBar: BottomNavigationBar(

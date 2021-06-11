@@ -1,10 +1,10 @@
 import 'package:clone_ifood/components/carousel/carousel.dart';
 import 'package:clone_ifood/components/categories_menu/category_menu.dart';
-import 'package:clone_ifood/core/app_colors.dart';
 import 'package:clone_ifood/home/menu_screens/home_screen/widgets/banner.dart';
 import 'package:clone_ifood/home/menu_screens/home_screen/widgets/button_filters_widget.dart';
 import 'package:clone_ifood/home/menu_screens/home_screen/widgets/ifood_famous.dart';
 import 'package:clone_ifood/home/menu_screens/home_screen/widgets/services.dart';
+import 'package:clone_ifood/home/menu_screens/home_screen/widgets/shops.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantScreen extends StatelessWidget {
@@ -12,11 +12,10 @@ class RestaurantScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        decoration: BoxDecoration(color: AppColors.white),
-        child: Column(
-          children: <Widget>[
+    return CustomScrollView(
+      slivers: <Widget>[
+        SliverList(
+          delegate: SliverChildListDelegate([
             SizedBox(
               height: 12,
             ),
@@ -54,10 +53,14 @@ class RestaurantScreen extends StatelessWidget {
             ),
             Container(
               child: IfoodServices(),
-            )
-          ],
-        ),
-      ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Shops()
+          ]),
+        )
+      ],
     );
   }
 }
